@@ -22,6 +22,11 @@ public class MobSpawner {
     private void spawnMythicMob(String mythicMobId, Location location, String customName) {
         ActiveMob mob = MythicBukkit.inst().getMobManager().spawnMob(mythicMobId, location);
 
+        if (mob == null) {
+            plugin.getLogger().warning("MythicMob not found: " + mythicMobId);
+            return;
+        }
+
         Entity entity = mob.getEntity().getBukkitEntity();
         entity.setCustomName(customName);
         entity.setCustomNameVisible(true);
