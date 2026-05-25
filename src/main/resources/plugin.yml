@@ -1,0 +1,10 @@
+name: CastleCore
+version: 1.0
+main: me.yourname.castlecore.CastleCore
+api-version: '1.20'
+depend:
+  - MythicMobs
+
+commands:
+  castle:
+    description: Castle command

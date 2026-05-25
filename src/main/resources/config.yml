@@ -1,0 +1,5 @@
+castle:
+  mobs:
+    - CastleKnight
+    - CastleArcher
+    - CastleBoss
